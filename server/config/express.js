@@ -11,10 +11,10 @@ const routes = require("../routes");
 const app = express();
 
 //get dist folder
-const distDir = path.join(__dirname, "../../dist");
+// const distDir = path.join(__dirname, "../../dist");
 
 //use dist folder
-app.use(express.static(distDir));
+app.use(express.static(path.join(__dirname, "../../dist")));
 
 //parsing from api
 app.use(bodyparser.json());
@@ -35,7 +35,7 @@ app.use("/api/", routes);
 
 //serve index.html angular file
 app.get("*", (req, res) => {
-  res.sendFile(path.join(distDir, "index.html"));
+  res.sendFile(path.join(__dirname, "../../dist", "index.html"));
 });
 
 module.exports = app;
