@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* @import '@angular/material/prebuilt-themes/deeppurple-amber.css'; */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/* @import '~@angular/material/theming'; */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  /* background-color: #f4f3f3; */
+  height: 100vh;
+  width: 100%;
+}
+
+div {
+  width: 100%;
+}
+
+@media (max-width: 858px) {
+  div {
+    width: 100%;
+  }
+}

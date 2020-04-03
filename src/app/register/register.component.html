@@ -1,0 +1,59 @@
+<mat-card class="register-card">
+  <mat-card-header>
+    <mat-card-title class="register">Register</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form [formGroup]="userGroup">
+      <mat-form-field class="full-width">
+        <input
+          matInput
+          name="firstName"
+          formControlName="firstName"
+          placeholder="firstName"
+          type="text"
+          required
+        /> </mat-form-field
+      ><br />
+      <mat-form-field class="full-width">
+        <input
+          matInput
+          name="lastname"
+          formControlName="lastName"
+          placeholder="lastName"
+          type="text"
+          required
+        /> </mat-form-field
+      ><br />
+      <mat-form-field class="full-width">
+        <input
+          matInput
+          name="email"
+          formControlName="email"
+          placeholder="Email"
+          type="email"
+          required
+        /> </mat-form-field
+      ><br />
+      <mat-form-field class="full-width">
+        <input
+          matInput
+          name="password"
+          formControlName="password"
+          placeholder="password"
+          type="password"
+          required
+        />
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button
+      mat-raised-button
+      color="primary"
+      [disabled]="!userGroup.valid"
+      (click)="register()"
+    >
+      Register
+    </button>
+  </mat-card-actions>
+</mat-card>

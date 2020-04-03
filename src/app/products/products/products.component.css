@@ -1,0 +1,13 @@
+.example-card {
+  max-width: 200px;
+  margin: 25px;
+}
+
+.example-header-image {
+
+  background-size: cover;
+}
+
+.category {
+  list-style-type: none;
+}
