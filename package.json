@@ -3,11 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server/index.js",
+    "start": "node ./server/index.js",
     "build": "ng build",
-    "build:prod": "npm run build -- --prod",
-    "localServer": "node server/index.js",
-    "serverWatch": "nodemon server",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
