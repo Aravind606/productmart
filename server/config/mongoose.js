@@ -1,12 +1,15 @@
 const mongoose = require("mongoose");
 const util = require("util");
-const config = require("./config");
+//const config = require("./config");
 
-const mongoUri = config.mongo.uri;
+//const mongoUri = config.mongo.uri;
 
-mongoose.connect(mongoUri, {
-  useNewUrlParser: true
-});
+mongoose.connect(
+  "mongodb+srv://aravind:9994320498@cluster0-3msaz.azure.mongodb.net/productmart?retryWrites=true&w=majority",
+  {
+    useNewUrlParser: true
+  }
+);
 
 const db = mongoose.connection;
 
